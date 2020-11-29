@@ -16,7 +16,8 @@ namespace ProbandoCSharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new Form2_30_11_2020__0_26());
         }
     }
 }
