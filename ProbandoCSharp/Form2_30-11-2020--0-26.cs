@@ -28,10 +28,10 @@ namespace ProbandoCSharp
         private void MostrarTabla(object sender, EventArgs e)
         {
             int numero = int.Parse(this.txtnumero.Text);
-            for (int i = 0; i < this.cajas.Count; i++)
+            for (int i = 1; i <= this.cajas.Count; i++)
             {
-                int multi = numero * (i + 1);
-                this.cajas[this.cajas.Count - i - 1].Text = multi.ToString();
+                int multi = numero * (i);
+                this.cajas[this.cajas.Count - i].Text = multi.ToString();
             }
             this.txtnumero.SelectAll();
             this.txtnumero.Focus();
